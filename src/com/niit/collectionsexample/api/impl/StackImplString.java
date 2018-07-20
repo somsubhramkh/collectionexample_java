@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 import com.niit.collectionsexample.api.Stack;
 
-public class StackImplString implements Stack{
+public class StackImplString implements Stack<String>{
 
 	private LinkedList stack;
 	
@@ -14,7 +14,7 @@ public class StackImplString implements Stack{
 	}
 	
 	@Override
-	public void push(Object item) {
+	public void push(String item) {
 		
 		stack.addLast(item);
 		
